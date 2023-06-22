@@ -8,17 +8,17 @@ namespace Logical_Programming
 {
     public class FibonacciSeries
     {
-        public static void FindFibonacci(int n)
+        public void FindFibonacci(int num)
         {
-            int a = 0;
-            int b = 1;
-            int c;
-            for (int i = 0; i < n; i++)
+            int firstNum = 0;
+            int secondNum = 1;
+            int currentNum;
+            for (int i = 0; i < num; i++)
             {
-                Console.Write(a + " ");
-                c = a + b;
-                a = b;
-                b = c;
+                Console.Write(firstNum + " ");
+                currentNum = firstNum + secondNum;
+                firstNum = secondNum;
+                secondNum = currentNum;
             }
         }
     }

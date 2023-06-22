@@ -10,20 +10,30 @@ namespace Logical_Programming
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to logical programming problem");
-            Console.WriteLine("Please choose 1program from below option");
-            Console.WriteLine("1.Fibonacci series");
-            int option = Convert.ToInt32(Console.ReadLine());
-
-            switch(option)
+            while (true)
             {
-                case 1:
-                    Console.WriteLine("Please Enter Value");
-                    int n = Convert.ToInt32(Console.ReadLine());
-                    FibonacciSeries.FindFibonacci(n);
-                    break;
+                Console.WriteLine("Please choose 1program from below option");
+                Console.WriteLine("1.Fibonacci series");
+                Console.WriteLine("0.Exit");
+                int option = Convert.ToInt32(Console.ReadLine());
+
+                switch (option)
+                {
+                    case 1:
+                        Console.WriteLine("Please Enter Value");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        FibonacciSeries series = new FibonacciSeries();
+                        series.FindFibonacci(num);
+                        break;
+                    case 0:
+                        Console.WriteLine("Exiting the program...");
+                        return;
+                    default:
+                        Console.WriteLine("Invalid option. Please choose a valid option.");
+                        break;
+                }
+                Console.ReadLine();
             }
-            Console.ReadLine();
         }
     }
 }
