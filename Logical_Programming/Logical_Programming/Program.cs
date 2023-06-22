@@ -15,6 +15,7 @@ namespace Logical_Programming
                 Console.WriteLine("Please choose 1program from below option");
                 Console.WriteLine("1.Fibonacci series");
                 Console.WriteLine("2.Perfect Number");
+                Console.WriteLine("3.Prime Number");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +32,12 @@ namespace Logical_Programming
                         int input = Convert.ToInt32(Console.ReadLine());
                         PerfectNumber perfectNumber = new PerfectNumber();
                         perfectNumber.FindPerfect(input);
+                        break;
+                    case 3:
+                        Console.WriteLine("Please enter number");
+                        int numPrime = Convert.ToInt32(Console.ReadLine());
+                        PrimeNumber primeNumber = new PrimeNumber();
+                        primeNumber.FindPrime(numPrime);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
