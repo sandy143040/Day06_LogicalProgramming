@@ -14,6 +14,7 @@ namespace Logical_Programming
             {
                 Console.WriteLine("Please choose 1program from below option");
                 Console.WriteLine("1.Fibonacci series");
+                Console.WriteLine("2.Perfect Number");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -24,6 +25,12 @@ namespace Logical_Programming
                         int num = Convert.ToInt32(Console.ReadLine());
                         FibonacciSeries series = new FibonacciSeries();
                         series.FindFibonacci(num);
+                        break;
+                    case 2:
+                        Console.WriteLine("Enter Number");
+                        int input = Convert.ToInt32(Console.ReadLine());
+                        PerfectNumber perfectNumber = new PerfectNumber();
+                        perfectNumber.FindPerfect(input);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
