@@ -8,7 +8,7 @@ namespace Logical_Programming
 {
     public class VendingMachine
     {
-        public static void GetMinimumNumOfNotes(int amount)
+        public static void GetMinNumOfNotes(int amount)
         {
             int[] notes = { 1000, 500, 100, 50, 10, 5, 2, 1 };
             int[] numbOfNotes = new int[notes.Length];

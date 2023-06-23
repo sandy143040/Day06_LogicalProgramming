@@ -61,7 +61,7 @@ namespace Logical_Programming
                     case 7:
                         Console.WriteLine("Enter Amount");
                         int amount = Convert.ToInt32(Console.ReadLine());
-                        VendingMachine.GetMinimumNumOfNotes(amount);
+                        VendingMachine.GetMinNumOfNotes(amount);
                         break;
                     case 8:
                         //int m = int.Parse(args[0]);
