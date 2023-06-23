@@ -21,6 +21,7 @@ namespace Logical_Programming
                 Console.WriteLine("6.Stop watch");
                 Console.WriteLine("7.Vending Machine");
                 Console.WriteLine("8.DayOfWeek");
+                Console.WriteLine("9.TemperaturConversion");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -75,6 +76,16 @@ namespace Logical_Programming
                         int year = Convert.ToInt32(Console.ReadLine());
                         int result = Util.dayOfWeek(month, day, year);
                         Console.WriteLine("Day is:" + result);
+                        break;
+                    case 9:
+                        Console.WriteLine("Enter a temperature:");
+                        double temp = double.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Enter the unit (C for Celsius or F for Fahrenheit):");
+                        char unit = char.Parse(Console.ReadLine());
+
+                        Double convertedTemperature = Temperature.temperatureConversion(temp, unit);
+                        Console.WriteLine("Converted temperature: " + convertedTemperature);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
