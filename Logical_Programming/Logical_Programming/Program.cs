@@ -22,6 +22,7 @@ namespace Logical_Programming
                 Console.WriteLine("7.Vending Machine");
                 Console.WriteLine("8.DayOfWeek");
                 Console.WriteLine("9.TemperaturConversion");
+                Console.WriteLine("10.Monthly Payment");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -86,6 +87,10 @@ namespace Logical_Programming
 
                         Double convertedTemperature = Temperature.temperatureConversion(temp, unit);
                         Console.WriteLine("Converted temperature: " + convertedTemperature);
+                        break;
+                    case 10:
+                        double monthlyPayment = MonthlyPayment.CalculateMonthlyPayment(10000, 5, 3.5);
+                        Console.WriteLine("Your monthly payment is: " + monthlyPayment);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
