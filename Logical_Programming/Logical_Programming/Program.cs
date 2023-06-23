@@ -19,6 +19,8 @@ namespace Logical_Programming
                 Console.WriteLine("4.Reverse Number");
                 Console.WriteLine("5.Coupon Number");
                 Console.WriteLine("6.Stop watch");
+                Console.WriteLine("7.Vending Machine");
+                Console.WriteLine("8.DayOfWeek");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -55,6 +57,24 @@ namespace Logical_Programming
                         break;
                     case 6:
                         Stopwatch.StopwatchFunction();
+                        break;
+                    case 7:
+                        Console.WriteLine("Enter Amount");
+                        int amount = Convert.ToInt32(Console.ReadLine());
+                        VendingMachine.GetMinimumNumOfNotes(amount);
+                        break;
+                    case 8:
+                        //int m = int.Parse(args[0]);
+                        //int d = int.Parse(args[1]);
+                        //int y = int.Parse(args[2]);
+                        Console.WriteLine("Enter month");
+                        int month = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter day");
+                        int day = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter year");
+                        int year = Convert.ToInt32(Console.ReadLine());
+                        int result = Util.dayOfWeek(month, day, year);
+                        Console.WriteLine("Day is:" + result);
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
