@@ -23,6 +23,7 @@ namespace Logical_Programming
                 Console.WriteLine("8.DayOfWeek");
                 Console.WriteLine("9.TemperaturConversion");
                 Console.WriteLine("10.Monthly Payment");
+                Console.WriteLine("11.SquareRoot");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -91,6 +92,12 @@ namespace Logical_Programming
                     case 10:
                         double monthlyPayment = MonthlyPayment.CalculateMonthlyPayment(10000, 5, 3.5);
                         Console.WriteLine("Your monthly payment is: " + monthlyPayment);
+                        break;
+                    case 11:
+                        Console.Write("Enter a non-negative number: ");
+                        double c = double.Parse(Console.ReadLine());
+                        double sqrtC = SquareRoot.Sqrt(c);
+                        Console.WriteLine($"The square root of {c} is approximately {sqrtC}");
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
