@@ -18,6 +18,7 @@ namespace Logical_Programming
                 Console.WriteLine("3.Prime Number");
                 Console.WriteLine("4.Reverse Number");
                 Console.WriteLine("5.Coupon Number");
+                Console.WriteLine("6.Stop watch");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -51,6 +52,9 @@ namespace Logical_Programming
                         Console.WriteLine("Enter Number");
                         int number = Convert.ToInt32(Console.ReadLine());
                         Coupon.getDistinctNumbers(number);
+                        break;
+                    case 6:
+                        Stopwatch.StopwatchFunction();
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
