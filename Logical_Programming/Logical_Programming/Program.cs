@@ -24,6 +24,7 @@ namespace Logical_Programming
                 Console.WriteLine("9.TemperaturConversion");
                 Console.WriteLine("10.Monthly Payment");
                 Console.WriteLine("11.SquareRoot");
+                Console.WriteLine("12.Binary Conversion");
                 Console.WriteLine("0.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -98,6 +99,11 @@ namespace Logical_Programming
                         double c = double.Parse(Console.ReadLine());
                         double sqrtC = SquareRoot.Sqrt(c);
                         Console.WriteLine($"The square root of {c} is approximately {sqrtC}");
+                        break;
+                    case 12:
+                        Console.Write("Enter a decimal number: ");
+                        int decimalNumber = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Binary representation: " + BinaryConverter.ToBinary(decimalNumber));
                         break;
                     case 0:
                         Console.WriteLine("Exiting the program...");
